@@ -4,18 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact form</title>
+    <title>Contact Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-    <h1>Contact Form</h1>
-    <form action="" method="post">
-        <label for="">  Name: <input type="text" name="Name:" id="username" placeholder="Name"></label>
-        <br>
-        <label for="">  Username: <input type="text" name="Name:" id="username" placeholder="Username"></label>
-    <div><label for="">password: <input type="password" name="password" id="password" placeholder="password"></label></div>
-    <div><label for="">Re-type password: <input type="password" name="password" id="password" placeholder="re-type password"></label></div>
-    <div><label for="">gender: </label></div>
-</form>
+    <section>
+        <h1>Contact Form</h1>
+        <form action="">
+            <div class="namecl">
+                <label for="name" class="head">Name: </label>
+                <input type="text" class="text" placeholder="Enter your Name">
+            </div>
+            <div class="namecl">
+                <label for="username" class="head">Username:</label>
+                <input type="text" class="text" placeholder="Enter your username">
+            </div>
+            <div class="namecl">
+                <label for="password" class="head">Password:</label>
+                <input type="password" class="text" name="password" id="" placeholder="Enter your Password">
+            </div>
+            <div class="namecl">
+                <label for="password" class="head">Re-type Password:</label>
+                <input type="password" class="text" name="password" id="" placeholder="Enter your Password">
+            </div>
+            <div class="namecl">
+                <label for="gender" class="head">Gender:</label>
+                <!-- Radio botton section -->
+               <div class="radio">
+                <input type="radio" name="Male" id="">
+                <label for="male">Male</label>
+                <input type="radio" name="Female" id="">
+                <label for="male">Female</label>
+               </div>
+            </div>
+            <!-- techie section -->
+            <div class="namecl">
+                <label for="Techie Skills:" class="head">Techie Skills:</label>
+                <div class="checkbox">
+                    <input type="checkbox" name="HTML" id="">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="CSS" id="">
+                    <label for="CSS">CSS</label>
+                    <input type="checkbox" name="JavaScript" id="">
+                    <label for="JavaScript">JavaScript</label>
+                </div>
+            </div>
+            <div class="namecl">
+                <label for="name" class="head">Phone Number:</label>
+                <input type="number" class="text" name="Number" id="" placeholder="Enter your address">
+            </div>
+            <div class="namecl">
+                <label for="name" class="head">Email:</label>
+                <input type="email" class="text" name="email" id="" placeholder="Enter your Email address">
+            </div>
+            <div class="namecl">
+                <label for="name" class="head" placeholder="choose">College:</label>
+                <select name="" id="">
+
+                    <option value="">blessed winners</option>
+                    <option value="">lilyfield</option>
+                    <option value="">glorious</option>
+                    <option value="">Tender care</option>
+                </select>
+            </div>
+            <input type="submit" class="submit" value="Submit">
+
+        </form>
+    </section>
+
 </body>
 </html>
